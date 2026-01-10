@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tigerbeetle:
+    image: ghcr.io/tigerbeetle/tigerbeetle:latest
+    container_name: tigerbeetle
+    ports:
+      - "3000:3000"
+    command: >
+      start --addresses=0.0.0.0:3000 /data/cluster_0_replica_0.tigerbeetle
+    volumes:
+      - tb-data:/data
+    init: true
+
+volumes:
+  tb-data:
