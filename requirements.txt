@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+tigerbeetle
+python-dotenv
+pydantic
+slowapi
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
